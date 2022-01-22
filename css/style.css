@@ -1,59 +1,69 @@
 .hidden {
   display: none;
 }
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+  height: 90vh;
+  width: 100%;
+}
+.weather {
+  font-size: 200%;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
 .clock {
   cursor: default;
   font-size: 800%;
   letter-spacing: -5px;
   text-align: center;
   line-height: 1;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   padding: 0;
   margin: 0;
   color: #fff;
-  text-shadow: black;
   font-weight: 400;
 }
+
 .greeting {
   text-align: center;
   line-height: 1;
   padding: 0;
   margin: 0;
   font-size: 3.375rem;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
-.container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.layout {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-}
-.wrapper {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
+.input {
   width: 100%;
   padding-top: 4px;
   display: block;
   background: 0;
   border: 0;
-  border-bottom: 2px solid #fff;
-  color: #fff;
+  border-bottom: 2px solid rgb(92, 85, 85);
+  color: rgb(75, 75, 75);
   font-size: 2.25em;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 500;
   outline: none;
   text-align: center;
   transition: border-color 0.2s ease;
   -webkit-border-radius: 0;
+}
+
+.todo {
+  align-items: left;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.button {
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+li {
+  font-size: 200%;
 }

@@ -5,36 +5,34 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <div class="wrapper_1">
-      <div id="weather">
+    <div class="container">
+      <div id="weather" class="weather">
         <span></span>
         <span></span>
       </div>
-    </div>
-    <div class="wrapper">
+
       <h1 id="h1-clock" class="clock">00:00:00</h1>
-      <form class="hidden" id="login-form">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="What is your name?"
-          class="container__input"
-        />
-        <input type="submit" value="Log In" />
-      </form>
+      <div>
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+            class="input"
+          />
+        </form>
+      </div>
       <h1 class="hidden" id="greeting"></h1>
-    </div>
-    <div class="wrapper">
-      <form id="todo-form" class="todo">
-        <input type="text" placeholder="Write a To Do" required />
+
+      <form id="todo-form">
+        <input type="text" placeholder="To Do" required class="input" />
       </form>
-
-      <ul id="todo-list"></ul>
+      <div>
+        <ul id="todo-list" class="todo"></ul>
+      </div>
     </div>
-
     <script src="src/clock.js"></script>
     <script src="src/greeting.js"></script>
     <script src="src/bgimg.js"></script>
